@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.bontempo.pensando_v01.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="338dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nietzsche" />
+
+    <Button
+        android:id="@+id/botaoTextoId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/proximo_pensamento"
+        android:textColor="@color/FundoLeitura"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewId" />
+
+    <ScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/botaoTextoId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caixaTexto03Id">
+
+        <TextView
+            android:id="@+id/caixaTexto02Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/FundoLeitura"
+            android:padding="10dp"
+            android:text="Que se passa para nós no domínio musical? Devemos em primeiro lugar aprender a ouvir um motivo, uma ária, de uma maneira geral, a percebê-lo, a distingui-lo, a limitá-lo e isolá-lo na sua vida própria; devemos em seguida fazer um esforço de boa vontade — para o suportar, mau-grado a sua novidade — para admitir o seu aspecto, a sua expressão fisionómica — e de caridade — para tolerar a sua estranheza; chega enfim o momento em que já estamos afeitos, em que o esperamos, em que pressentimos que nos faltaria se não viesse; a partir de então continua sem cessar a exercer sobre nós a sua pressão e o seu encanto e, entretanto, tornamo-nos os seus humildes adoradores, os seus fiéis encantados que não pedem mais nada ao mundo, senão ele, ainda ele, sempre ele. Não sucede assim só com a música: foi da mesma maneira que aprendemos a amar tudo o que amamos. A nossa boa vontade, a nossa paciência, a nossa equanimidade, a nossa suavidade com as coisas que nos são novas acabam sempre por ser pagas, porque as coisas, pouco a pouco, se despojam para nós do seu véu e apresentam-se a nossos olhos como indizíveis belezas: é o agradecimento da nossa hospitalidade. Quem se ama a si próprio aprende a fazê-lo seguindo um caminho idêntico: existe apenas esse. O amor também deve ser aprendido. "
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/caixaTexto01Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/background_light"
+        android:text="É Preciso Aprender a Amar"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/caixaTexto03Id"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/background_light"
+        android:text="Fonte: A Gaia Ciência"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caixaTexto01Id" />
+
+</android.support.constraint.ConstraintLayout>

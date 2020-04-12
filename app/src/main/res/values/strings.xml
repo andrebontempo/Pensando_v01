@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pensando Na Vida</string>
+    <string name="nova_string">Texto</string>
+    <string name="proximo_pensamento">Próximo Pensamento</string>
+</resources>
